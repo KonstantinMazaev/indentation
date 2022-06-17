@@ -1,5 +1,6 @@
 @import "fonts.css";
 
+/* setting */
 html {
   box-sizing: border-box;
 }
@@ -36,26 +37,60 @@ section {
   margin: 0 auto;
 }
 
-.main {
-  padding: 60px 0 50px;
+.images {
+  display: block;
+  margin: 0 auto 30px;
 }
 
-.main__title {
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.title--main {
   font-weight: 900;
   font-size: 60px;
   line-height: 120%;
   margin-bottom: 30px;
 }
 
+.title--list {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.text--limited-width {
+  width: 1000px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* main */
+
+.main {
+  padding: 60px 0 50px;
+}
+
 .main__content {
   margin-bottom: 25px;
 }
 
-.main__text {
-  margin-bottom: 30px;
-}
-
-.main__text:last-child {
+.main__content .text:last-child {
   margin-bottom: 0;
 }
 
@@ -109,13 +144,6 @@ section {
 
 /* indents */
 
-.indents__title {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 120%;
-  margin-bottom: 30px;
-}
-
 .indents__row {
   margin-bottom: 30px;
 }
@@ -130,37 +158,32 @@ section {
   clear: both;
 }
 
+.indents__row:nth-of-type(1) .images {
+  width: 560px;
+  float: left;
+  margin: 0 30px 0 0;
+}
+
+.indents__row:nth-of-type(1) .indents__content {
+  float: right;
+}
+
+.indents__row:nth-of-type(2) .images {
+  width: 560px;
+  float: right;
+  margin: 0;
+}
+
+.indents__row:nth-of-type(2) .indents__content {
+  float: left;
+  margin-right: 30px;
+}
+
 .indents__content {
   width: 486px;
 }
 
-.indents__img {
-  float: left;
-  margin-right: 30px;
-}
-
-.indents__content {
-  float: left;
-}
-
-.indents__row:nth-of-type(2) .indents__img {
-  float: right;
-  margin-right: 0;
-}
-
-.indents__row:nth-of-type(2) .indents__content {
-  float: right;
-  margin-right: 30px;
-}
-
-.indents__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  margin-bottom: 30px;
-}
-
-.indents__text:last-child {
+.indents__content .text:last-child {
   margin-bottom: 0;
 }
 
@@ -173,26 +196,14 @@ section {
   margin-bottom: 30px;
 }
 
-.indent-last__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  margin-bottom: 30px;
-}
-
-.indent-last__text:last-child {
-  margin-bottom: 0;
-}
-
-.indent-last__img {
-  display: block;
-  margin: 0 auto 30px;
-}
-
 .indent-last__figure {
   margin: 0 0 30px;
   border: 1px solid #000000;
   overflow: hidden;
+}
+
+.indent-last__figure .images {
+  margin-bottom: 0;
 }
 
 .indent-last__figcaption {
@@ -203,7 +214,7 @@ section {
   padding: 15px 30px;
 }
 
-.indent-last__figure .indent-last__img {
+.indent-last .text:last-child {
   margin-bottom: 0;
 }
 
@@ -216,23 +227,7 @@ section {
   margin-bottom: 30px;
 }
 
-.indent-last-remove__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  margin-bottom: 30px;
-}
-
-.indent-last-remove__text:last-child {
-  margin-bottom: 0;
-}
-
-.indent-last-remove__img {
-  display: block;
-  margin: 0 auto 30px;
-}
-
-.indent-last-remove__img:last-child {
+.indent-last-remove .images:last-child {
   margin-bottom: 0;
 }
 
@@ -272,59 +267,3 @@ section {
 .result__item:last-child {
   margin-bottom: 0;
 }
-
-.result__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  width: 1000px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
