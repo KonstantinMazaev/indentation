@@ -26,10 +26,6 @@ section {
   padding: 25px 0 25px;
 }
 
-section:last-child {
-  padding-bottom: 0;
-}
-
 .container {
   max-width: 1080px;
   margin: 0 auto;
